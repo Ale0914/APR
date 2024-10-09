@@ -1,0 +1,144 @@
+
+    body {
+      background-image: url('https://static.vecteezy.com/system/resources/previews/001/900/914/non_2x/blurred-restaurant-scene-with-empty-tabletop-free-photo.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      position: relative;
+    }
+
+  
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4); 
+      z-index: -1; 
+    }
+
+
+    .login-container {
+      background-color: rgba(63, 80, 44, 0.85); 
+      padding: 40px;
+      border-radius: 10px; 
+      width: 400px; 
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); 
+      color: #ffffff; 
+      position: relative; 
+      z-index: 1; 
+    }
+
+   
+    .login-logo {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .login-logo img {
+      width: 90%; 
+      max-width: 140px;
+      border-radius: 15px; 
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    }
+
+   
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #ffffff8a; 
+    }
+
+   
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #ffffff; 
+    }
+
+ 
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      margin-bottom: 10px;
+       background-color: rgba(195, 199, 191, 0.85);
+      font-size: 16px;
+    }
+
+    input[type="text"]::placeholder,
+    input[type="password"]::placeholder {
+      color: #44424f; 
+    }
+
+
+    .btn-pink {
+      background-color: rgba(44, 69, 80, 0.85);
+      color: #141313;
+      border: none;
+      width: 100%;
+      padding: 10px 18px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 15px;
+      transition: background-color 0.3s ease-in-out;
+      font-weight: bold;
+    }
+
+    .btn-pink:hover {
+      background-color: #535e70; 
+    }
+
+  
+    #loadingModal {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    #loadingModal .modal-dialog {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    #loadingModal .spinner-border {
+      width: 5rem;
+      height: 5rem;
+      color: #6c3030;
+    }
+
+    #loadingModal p {
+      color: #ffffff;
+      margin-top: 10px;
+      font-size: 18px;
+      text-align: center;
+    }
+
+  
+    @media (max-width: 500px) {
+      .login-container {
+        width: 90%;
+        padding: 20px;
+      }
+    }

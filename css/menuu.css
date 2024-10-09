@@ -1,0 +1,237 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.image-container {
+    width: 100%;
+    height: 200px; 
+    overflow: hidden; 
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+}
+/* Estilos del menú de navegación */
+.navbar {
+    background: linear-gradient(90deg, #ff8a00, #da1b60);
+    padding: 1.5rem;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.navbar-brand:hover {
+    color: #ffe600;
+}
+
+/*texto dentro del span */
+.navbar-brand .brand-text {
+    color: black; 
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #ffe600;
+    color: #333;
+    border-radius: 8px;
+}
+
+.navbar-nav .dropdown-menu {
+    background: linear-gradient(90deg, #ff8a00, #da1b60); 
+}
+
+.dropdown-item {
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+}
+
+.dropdown-item:hover {
+    background-color: #ff8a00;
+}
+
+.navbar-text {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28180,180,180,0.7%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler:hover {
+    background-color: #ff8a00;
+}
+
+/* Nuestra carta */
+.nuestra-carta {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.nuestra-carta .item {
+    text-align: center;
+    width: 20%;
+    font-size: 1.5rem; 
+    margin: 20px; 
+}
+
+.nuestra-carta .item img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    transition: transform 0.3s ease;
+}
+
+.nuestra-carta .item:hover img {
+    transform: scale(1.1);
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.informacion-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.caja {
+    width: calc(45% - 20px);
+    margin: 20px; 
+    background-color: #bcd899;
+    color: black;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    border-radius: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.caja:hover {
+    transform: translateY(-5px);
+}
+
+.banner {
+    background-image: url('https://img.pikbest.com/wp/202344/assorted-an-assortment-of-various-fast-food-items-on-a-textured-gray-table_9906835.jpg!bw700');
+    background-size: cover;
+    background-position: bottom center;
+    text-align: left;
+    padding: 50px 20px;
+    height: 400px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+}
+
+.banner-content {
+    position: absolute;
+    right: 50px; 
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 40%; 
+    text-align: right; 
+}
+
+.banner h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.banner p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.btn-custom {
+    background-color: #7fb3d5; 
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.btn-custom:hover {
+    background-color: #5499c7;
+}
+
+
+
+.ofertas {
+    background-color: #f8d7da;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.ofertas h2 {
+    color: #721c24;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.oferta-item {
+    display: inline-block;
+    width: 30%;
+    margin: 0 1.5%;
+    background-color: #ffffff; 
+    border: 1px solid #dc3545;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    vertical-align: top;
+}
+
+.oferta-item img {
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 10px 10px 0 0; 
+}
+
+.oferta-item h3 {
+    color: #dc3545; 
+    margin: 15px 0 10px;
+}
+
+.oferta-item p {
+    color: #6c757d; 
+}
+
+.oferta-item:hover {
+    transform: translateY(-5px); 
+}
+
+
+
